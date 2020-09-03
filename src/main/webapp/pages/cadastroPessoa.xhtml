@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<title>Cadastro de Pessoas</title>
+<body>
+
+<h:form>
+    <h:panelGrid columns="2">
+        <h:outputText id="nome" value="NOME"/>
+        <h:inputText id="campoNome" maxlength="50" size="30" value="#{pessoaBean.nome}"/>
+
+        <h:outputText id="Snome" value="NOME"/>
+        <h:inputText id="campoSNome" maxlength="50" size="30" value="#{pessoaBean.sobrenome}"/>
+
+
+        <h:outputText id="cpf" value="CPF"/>
+        <h:inputText id="Cpf" maxlength="14" size="30" value="#{pessoaBean.cpf}"/>
+
+        <h:outputText id="tel" value="Tel"/>
+        <h:inputText id="campoTelefone" maxlength="14" size="30" value="#{pessoaBean.telefone}"/>
+
+        <h:outputText id="nacionalidade" value="Nacionalidade"/>
+        <h:inputText id="campoNasc" maxlength="50" size="40" value="#{pessoaBean.nacionalidade}"/>
+
+        <h:outputText id="idade" value="Idade"/>
+        <h:inputText id="campoIdade" maxlength="8" size="10" value="#{pessoaBean.idade}"/>
+
+        <h:outputText id="sexo" value="Sexo"/>
+        <h:selectOneMenu>
+            <f:selectItem itemLabel="Masculino" itemValue="#{pessoaBean.sexo}"/>
+            <f:selectItem itemLabel="Feminino" itemValue="#{pessoaBean.sexo}"/>
+        </h:selectOneMenu>
+        <h:commandButton value="Cadastrar"/>
+        <h:commandButton value="Voltar" action="index"/>
+
+    </h:panelGrid>
+</h:form>
+</body>
+</html>
