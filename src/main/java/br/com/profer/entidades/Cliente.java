@@ -1,34 +1,31 @@
 package br.com.profer.entidades;
 
-import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-@Entity
+@Entity(name = "Cliente")
+
 public class Cliente implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_Cliente")
     private int id_Cliente;
-    @Column
+
+    @Column(name = "nome")
     private String nome;
-    @Column
+
+    @Column(name = "email")
     private String email;
-    @Column
+
+    @Column(name = "telefone")
     private int telefone;
-//    @Column
-//    private int telefone2;
-
-//    @Column(name = "telefone3")
-//    private int telefone3;
-
-    @Column
-    private Date dtNasc;
-
-
-    @Column
-    private String comoConhec;
 
     public Cliente() {
     }
@@ -65,42 +62,12 @@ public class Cliente implements Serializable {
         this.telefone = telefone;
     }
 
-//    public int getTelefone2() {
-//        return telefone2;
-//    }
-//
-//    public void setTelefone2(int telefone2) {
-//        this.telefone2 = telefone2;
-//    }
-//
-//    public int getTelefone3() {
-//        return telefone3;
-//    }
-//
-//    public void setTelefone3(int telefone3) {
-//        this.telefone3 = telefone3;
-//    }
-
-    public Date getDtNasc() {
-        return dtNasc;
-    }
-
-    public void setDtNasc(Date dtNasc) {
-        this.dtNasc = dtNasc;
-    }
-
-    public String getComoConhec() {
-        return comoConhec;
-    }
-
-    public void setComoConhec(String comoConhec) {
-        this.comoConhec = comoConhec;
-    }
-
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Cliente cliente = (Cliente) o;
         return id_Cliente == cliente.id_Cliente;
     }

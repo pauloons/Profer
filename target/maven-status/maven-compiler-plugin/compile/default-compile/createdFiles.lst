@@ -1,3 +1,6 @@
+br\com\profer\utils\Enumeravel.class
+br\com\profer\dao\DaoGeneric.class
+br\com\profer\utils\TesteJPA.class
 br\com\profer\entidades\Cliente.class
 br\com\profer\bean\PessoaBean.class
 br\com\profer\entidades\Pessoa.class

@@ -1340,6 +1340,7 @@ li {
   content: "";
   display: table;
   border-collapse: collapse;
+  text-align: center;
 }
 #layout-portlets-cover:after,
 .Card:after {
@@ -1565,3 +1566,8 @@ li {
 /* main menu */
 /* for mobile devices */
 
+/*minhas css*/
+.center{
+  text-align: center;
+  padding: 25px;
+}

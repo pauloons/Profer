@@ -1,12 +1,15 @@
 package br.com.profer.entidades;
 
+import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-public class Profissional {
+@Table(name="Profissional")
+public class Profissional implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private int tempoExp;
     @Column

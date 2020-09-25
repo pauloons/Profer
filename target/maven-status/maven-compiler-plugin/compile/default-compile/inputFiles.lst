@@ -1,12 +1,15 @@
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\bean\ProfissionalBean.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\bean\ClienteBean.java
-C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\dao\PessoaDao.java
-C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\bean\PessoaBean.java
+C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\dao\DaoGeneric.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\dao\ProfissionalDao.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\utils\JPAUtils.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\utils\Main.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\entidades\Pessoa.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\entidades\Profissional.java
+C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\dao\PessoaDao.java
+C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\utils\TesteJPA.java
+C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\bean\PessoaBean.java
+C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\utils\Enumeravel.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\dao\ClienteDao.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\entidades\Cliente.java
 C:\Desenvolvimento\WorkspaceIJ\profer1\src\main\java\br\com\profer\utils\TesteConexaoBD.java

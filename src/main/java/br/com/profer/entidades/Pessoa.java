@@ -1,11 +1,15 @@
 package br.com.profer.entidades;
 
+import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-public class Pessoa {
+@Table(name="Pessoa")
+public class Pessoa implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     public int id;
     @Column

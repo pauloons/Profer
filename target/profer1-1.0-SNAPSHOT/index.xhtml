@@ -3,12 +3,24 @@
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui"
-                template="/WEB-INF/template.xhtml">
+                template="/WEB-INF/template.xhtml"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 
-    <ui:define name="corpo">              
+    <ui:define name="corpo">
         <title>Profer</title>
-                    
-          <h1>Projeto para conhecimento das tecnologias java, jpa, hibernate, jsf,cdi e primefaces </h1>
+        <div align="center" style="padding-top: 50px ">
+            <h6>Projeto para conhecimento das tecnologias java, jpa, hibernate, jsf,cdi e primefaces </h6>
+            <h1>Encontre o profissional mais próximo de você </h1>
+            <h3>Profissional - Prestador de Serviço</h3>
+        </div>
+        <div align="center" style="padding-top: 25px">
+            <h:inputText
+                    a:placeholder="Pedreiro,Serralheiro,pintor" autocomplete="fotografo" size="60" maxlength="60"
+                    style="height:30px;font-size:larger;text-align: center" styleClass="BorderAll"/>
+        </div>
     </ui:define>
+    <h:form>
+        <p:commandButton value="pesquisar" icon="search"></p:commandButton>
+    </h:form>
 
 </ui:composition>

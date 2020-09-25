@@ -1,9 +1,10 @@
 package br.com.profer.bean;
 
+import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean(name = "profissionalBean")
-public class ProfissionalBean {
+public class ProfissionalBean{
     private int tempoExp;
     private String profissao;
 

@@ -15,19 +15,10 @@ public class Main {
         EntityManager em = new JPAUtils().getEntityManager();
         em.getTransaction().begin();*/
 
-        EntityManagerFactory emf = Persistence.
-                createEntityManagerFactory("postgres");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("postgres");
         EntityManager em = emf.createEntityManager();
-
-        Cliente cliente = new Cliente();
-        cliente.setNome("Victor Alexandre");
-        cliente.setEmail("vick@gmail.com");
-        cliente.setTelefone(619865555);
-//        cliente.setTelefone2(618445445);
-
         EntityTransaction tx = em.getTransaction();
         tx.begin();
-        em.persist(cliente);
         tx.commit();
         em.close();
         emf.close();
