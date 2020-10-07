@@ -1,8 +1,9 @@
 package br.com.profer.bean;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import java.util.Date;
-
+@ViewScoped
 @ManagedBean(name = "pessoaBean")
 
 public class PessoaBean {

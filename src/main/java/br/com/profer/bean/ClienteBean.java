@@ -2,7 +2,6 @@ package br.com.profer.bean;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
-
 import br.com.profer.dao.DaoGeneric;
 import br.com.profer.entidades.Cliente;
 

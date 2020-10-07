@@ -2,7 +2,9 @@ package br.com.profer.bean;
 
 import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 
+@ViewScoped
 @ManagedBean(name = "profissionalBean")
 public class ProfissionalBean{
     private int tempoExp;
