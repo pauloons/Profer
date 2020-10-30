@@ -38,7 +38,7 @@
           <element id="library" level="project" name="Maven: org.eclipse.persistence:eclipselink:2.5.2" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:javax.persistence:2.1.0" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:commonj.sdo:2.1.1" />
-          <element id="library" level="project" name="Maven: org.primefaces:primefaces:6.0" />
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:7.0" />
           <element id="library" level="project" name="Maven: org.primefaces.extensions:all-themes:1.0.8" />
           <element id="library" level="project" name="Maven: org.primefaces.themes:afterdark:1.0.8" />
           <element id="library" level="project" name="Maven: org.primefaces.themes:afternoon:1.0.8" />
@@ -77,11 +77,6 @@
           <element id="library" level="project" name="Maven: org.primefaces.themes:vader:1.0.8" />
           <element id="library" level="project" name="Maven: org.primefaces.themes:home:1.0.8" />
           <element id="library" level="project" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final" />
-          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.4.1.Final" />
-          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
-          <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
-          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
-          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
