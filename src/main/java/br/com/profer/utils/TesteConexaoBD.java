@@ -10,7 +10,7 @@ public class TesteConexaoBD {
     private Connection con;
 
     public static void main(String[] args) {
-        String url = "jdbc:postgresql://localhost:5433/Profer1";
+        String url = "jdbc:postgresql://localhost:5432/Profer1";
 
         String usuario = "postgres";
         String senha = "postgres";

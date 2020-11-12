@@ -10,31 +10,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "Cliente")
-
+@Table(name = "Cliente")
 public class Cliente implements Serializable {
-    private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id_Cliente")
     private int id_Cliente;
 
-    @Column(name = "nome")
+    @Column(name = "nome", nullable = false)
     private String nome;
 
-    @Column(name = "email")
+    @Column(name = "email",nullable = false)
     private String email;
 
-    @Column(name = "telefone")
+    @Column(name = "telefone", nullable = true)
     private int telefone;
-
-    public Cliente() {
-    }
-
-    public int getId_Cliente() {
-        return id_Cliente;
-    }
 
     public void setId_Cliente(int id_Cliente) {
         this.id_Cliente = id_Cliente;
@@ -62,20 +53,5 @@ public class Cliente implements Serializable {
 
     public void setTelefone(int telefone) {
         this.telefone = telefone;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
-        Cliente cliente = (Cliente) o;
-        return id_Cliente == cliente.id_Cliente;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id_Cliente);
     }
 }

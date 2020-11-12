@@ -1,33 +1,26 @@
 package br.com.profer.entidades;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import javax.persistence.*;
 
 @Entity
 @Table(name="Profissional")
 public class Profissional implements Serializable {
-    private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
-    private int tempoExp;
-    @Column
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "tempo_exp",nullable = false)
+    private LocalDate tempoExp;
+
+    @Column(name = "profissao", nullable = false)
     private String profissao;
 
-    public Profissional() {
-    }
-
-    public Profissional(int tempoExp, String profissao) {
-        this.tempoExp = tempoExp;
-        this.profissao = profissao;
-    }
-
-    public int getTempoExp() {
+    public LocalDate getTempoExp() {
         return tempoExp;
     }
 
-    public void setTempoExp(int tempoExp) {
+    public void setTempoExp(LocalDate tempoExp) {
         this.tempoExp = tempoExp;
     }
 

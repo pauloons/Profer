@@ -1,45 +1,35 @@
 package br.com.profer.entidades;
 
 import java.io.Serializable;
+import java.util.Objects;
 import javax.persistence.*;
 
 @Entity
 @Table(name="Pessoa")
 public class Pessoa implements Serializable {
-    private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id_pessoa", nullable = false)
     public int id;
-    @Column
+
+    @Column(name = "nome", nullable = false)
     public String nome;
-    @Column
+
+    @Column(name = "cpf", nullable = false)
     public String cpf;
-    @Column
+
+    @Column(name = "telefone", nullable = false)
     public int telefone;
-//    @Column
-//    public int telefone2;
-    @Column
 
+    @Column(name = "nascionalidade", nullable = false)
     public String nacionalidade;
-    @Column
+
+    @Column(name = "idade", nullable = false)
     public int idade;
-    @Column
+
+    @Column(name = "sexo", nullable = false)
     public String sexo;
-
-    public Pessoa() {
-    }
-
-    public Pessoa(int id, String nome, String cpf, int telefone, String nacionalidade, int idade, String sexo) {
-        this.id = id;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.telefone = telefone;
-        this.nacionalidade = nacionalidade;
-        this.idade = idade;
-        this.sexo = sexo;
-    }
 
     public int getId() {
         return id;
@@ -96,5 +86,4 @@ public class Pessoa implements Serializable {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-
 }
